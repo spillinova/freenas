@@ -290,7 +290,7 @@ def send_mail(
         error = True
     except Exception as e:
         errmsg = str(e)
-        log.warn('Failed to send email: %s', errmsg, exc_info=True)
+        log.warn('Failed to send email: %s', errmsg)
         error = True
         if queue:
             with MailQueue() as mq:
