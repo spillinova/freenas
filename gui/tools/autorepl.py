@@ -319,11 +319,7 @@ for replication in replication_tasks:
     # Attempt to create the remote dataset.  If it fails, we don't care at this point.
     rzfscmd = "zfs create -o readonly=on "
     ds = ''
-    if "/" not in localfs:
-        localfs_tmp = "%s/%s" % (localfs, localfs)
-    else:
-        localfs_tmp = localfs
-    for direc in (remotefs.partition("/")[2] + "/" + localfs_tmp.partition("/")[2]).split("/"):
+    for direc in (remotefs.partition("/")[2] + "/" + localfs.partition("/")[2]).split("/"):
         # If this test fails there is no need to create datasets on the remote side
         # eg: tank -> tank replication
         if not direc:
