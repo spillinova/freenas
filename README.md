@@ -1,9 +1,7 @@
 FreeNAS 11 Source
 =============
 [![Build Status](https://travis-ci.org/spillinova/freenas.svg?branch=master)](https://travis-ci.org/spillinova/freenas)
-
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
-
 ![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg)
 
 
