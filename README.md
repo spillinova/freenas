@@ -27,7 +27,7 @@ If your Pull-Request depends upon another repo / branch to build properly, you c
 
 ```DEPENDS: https://github.com/freenas/ports/tree/kris/testbranch```
 
-An example would be, sending a pull-request for the freenas/samba repo, but it depends upon port changes in the freenas/ports repo. You would first
+An example would bee, sending a pull-request for the freenas/samba repo, but it depends upon port changes in the freenas/ports repo. You would first
 push your port changes to a branch in freenas/ports (kris/testbranch in this example). Then when creating your pull-request for freenas/samba, you would
 insert text into the pull-request description field as shown above.
 
