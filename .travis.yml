@@ -12,7 +12,7 @@ script: .travis/flake8.sh
 deploy:
   provider: pages
   skip-cleanup: true
-  api_key: '$GITHUB_API_KEY' # Set in travis-ci.org dashboard, marked secure
+  api_key: '$GITHUB_TOKEN' # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
     branch: master
